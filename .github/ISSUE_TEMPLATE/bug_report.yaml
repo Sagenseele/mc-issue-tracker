@@ -1,0 +1,36 @@
+name: Bug Report
+description: File a bug report
+labels: ["a:bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        1. Please search for existing issues before submitting a new one.
+        2. Please add the correct Modpack Label to your issue."
+        3. Completely fill out the template below. Failure to do so is likely to get the issue closed immediately.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe what happened. Include also details, which may be relevant from your pov.
+      placeholder: Tell me.
+    validations:
+      required: true
+  - type: textarea
+    id: what-expected
+    attributes:
+      label: What was expected?
+      description: What was expected to happen?
+      placeholder: Tell me.
+    validations:
+      required: true
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Modpack
+      description: Select the Modpack
+      multiple: false
+      options:
+        - Ages Reimagined
+    validations:
+      required: true
