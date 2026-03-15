@@ -18,3 +18,13 @@ body:
     attributes:
       label: Images
       description: Upload any images to help describe your feature request here.
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Modpack
+      description: Select the Modpack
+      multiple: false
+      options:
+        - Ages Reimagined
+    validations:
+      required: true
