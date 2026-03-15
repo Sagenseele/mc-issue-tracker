@@ -1,0 +1,20 @@
+name: Feature Request
+description: File a feature request
+labels: ["a:enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search for existing issues before submitting a new one.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Describe the new feature.
+      description: Provide as much details as possible.
+    validations:
+      required: true
+  - type: textarea
+    id: info
+    attributes:
+      label: Images
+      description: Upload any images to help describe your feature request here.
